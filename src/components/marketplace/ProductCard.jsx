@@ -3,9 +3,8 @@ import { ChevronRight } from "lucide-react";
 import ProductImage from "./ProductImage";
 import { formatINR } from "../../utils/format";
 
-// Horizontal list card — same shape as the existing "Top Brands" rows
-// (thumbnail + title + subtitle) so the new Marketplace section reads
-// like a natural extension of the Shop page, not a bolted-on screen.
+// Horizontal list card 
+
 export default function ProductCard({ product }) {
   const cheapestEmi = product.emiPlans[product.emiPlans.length - 1];
   return (
