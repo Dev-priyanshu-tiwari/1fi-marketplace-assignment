@@ -1,9 +1,6 @@
 import { Sparkles } from "lucide-react";
 import SearchBar from "./SearchBar";
 
-// Per the assignment, Top Brands and Nearby Stores need no implementation
-// and can remain blank — shared chrome (search bar) stays for visual
-// consistency, the list content underneath is intentionally left out.
 export default function BlankTab({ label }) {
   return (
     <div>
