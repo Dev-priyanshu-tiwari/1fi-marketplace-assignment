@@ -1,9 +1,6 @@
 import { Sparkles, ShoppingBag, Laptop, Bike } from "lucide-react";
 
-// Recreates the layout/typography/tone of the existing Shop page hero
-// (dark purple gradient, "NO-COST EMIs" badge, bold headline). The exact
-// 3D product illustration isn't available here, so it's approximated
-// with layered icons — swap in the real artwork asset when integrating.
+
 export default function ShopHero() {
   return (
     <div className="relative overflow-hidden bg-gradient-to-br from-[#2A0A5E] via-[#4A1594] to-[#6C28D9] px-5 pt-6 pb-8">
