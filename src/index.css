@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-surface-muted text-ink font-sans antialiased;
+}
+
+/* mobile-first app frame so it reads like an Android app, not a website, on desktop */
+.app-frame {
+  max-width: 430px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: #fff;
+  position: relative;
+  box-shadow: 0 0 0 1px rgba(24,17,33,0.04);
+}
+
+@media (min-width: 431px) {
+  body {
+    background: #F1EEF7;
+  }
+  .app-frame {
+    min-height: 100dvh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px -20px rgba(24,17,33,0.35);
+  }
+}
+
+::-webkit-scrollbar { width: 0; height: 0; }
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
